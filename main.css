@@ -1,0 +1,67 @@
+#templates {
+	display: none;
+}
+body {
+	width: 320px;
+	height: 800px;
+	border: 1px dotted black;
+}
+/*NAV BAR--------------------------------*/
+/*.nav-bar {
+	list-style: none;
+}*/
+
+/*.dropdown {
+	position: absolute;
+	margin-left: 300px;
+}*/
+
+/*Attempting to apply meida queries*/
+
+/*@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+*/
+/*ADD CATEGORY BUTTON*/
+.add-category-button {
+	margin-top: 20px;
+	width: 90px;
+}
+/*ENTER A CATEGORY INPUT*/
+.category-tpl {
+
+}
+/*ENTRY FOR USER INFO------item & cost*/
+.new-item-title {
+
+}
+
+.new-item-title {
+
+
+}
+/*OUT PUT USER INFO -----Item, cost & remove btn*/
+.item-tpl {
+	border: 1px solid #1919A3;
+	margin-top: 20px;
+}
+.item-title {
+	float: left;
+	margin-top: 0;
+	margin-right: 400px;
+}
+.item-cost {
+	float: left;
+	margin-right: 5px;
+} 
+
+/*REMOVE BUTTON*/
+.remove-btn {
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: #b2b2b2;
+	color: #333333;
+	font-weight: bolder;
+}
+
+
+}
