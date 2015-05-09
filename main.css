@@ -5,6 +5,7 @@ body {
 	width: 320px;
 	height: 800px;
 	border: 1px dotted black;
+	padding: 10px;
 }
 /*NAV BAR--------------------------------*/
 /*.nav-bar {
@@ -29,31 +30,29 @@ body {
 .category-tpl {
 
 }
-/*ENTRY FOR USER INFO------item & cost*/
+/*ENTER ITEM AND COST INPUT*/
 .new-item-title {
-
+	width: 100px;
 }
 
-.new-item-title {
-
+.new-item-cost {
+width: 100px;
 
 }
-/*OUT PUT USER INFO -----Item, cost & remove btn*/
-.item-tpl {
+/*USER DATA DISPLAYED*/
+#item-tpl {
 	border: 1px solid #1919A3;
 	margin-top: 20px;
 }
 .item-title {
 	float: left;
 	margin-top: 0;
-	margin-right: 400px;
+	margin-right: 100px;
 }
 .item-cost {
 	float: left;
 	margin-right: 5px;
 } 
-
-/*REMOVE BUTTON*/
 .remove-btn {
 	width: 20px;
 	height: 20px;

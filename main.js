@@ -7,6 +7,7 @@ var Item = function(title, cost) {
 };
 // iTEM RENDER METHOD
 Item.prototype.render = function () {
+	var self = this;
 	if(this.el === undefined){
 		this.el = $('#item-tpl')
 		.clone()
@@ -14,8 +15,16 @@ Item.prototype.render = function () {
 	}
 	this.el.find('.item-title').text(this.title);
 	this.el.find('.item-cost').text(this.cost);
+	
+	//  here is where you added things with rob
+	this.el.find('.remove-btn').attr('data-name', self.title);
+	console.log(this);
+	this.el.find('.remove-btn').on('click',function (){
+	var itemNameRemove = $(this).data('name');
+	self.category.removeItem(itemNameRemove);
 
-	this.el.find('.remove-btn').on('click',this.remove.bind(this));
+		// self.remove.bind(self)()
+	});
 	return this.el;
 };
 
@@ -33,6 +42,14 @@ var Category = function (title) {
 // ADD ITEM METHOD
 Category.prototype.addItem = function (item) {
 	this.items.push(item);
+	item.category = this;
+	this.render();
+};
+Category.prototype.removeItem = function (name) {
+	this.items = this.items.filter(function(item, i) {
+		return item.title !== name;
+			
+	});
 	this.render();
 };
 
@@ -104,7 +121,11 @@ $('.add-category-button').on('click', function (e) {
 					 '</form>');
 });
 
-
+// visual hard coded
+var turtleCareSupplies = new Category('Turtle Care Supplies');
+$('body').append(turtleCareSupplies.render());
+var turtleWash = new Item('Turtle Wash', 12.98);
+$('body').append(turtleWash.render());
 // on document ready closing tags
 });
 
