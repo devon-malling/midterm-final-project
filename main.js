@@ -56,7 +56,7 @@ Category.prototype.removeItem = function (name) {
 // Category render method
 Category.prototype.render = function () {
 	if(this.el === undefined) {
-		this.el = $('#category-tpl')
+		this.el = $('#category-with-items-tpl')
 		.clone()
 		.attr('id', null);
 	

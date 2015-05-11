@@ -9,7 +9,7 @@
   <body>
     
   <!-- NAVIGATION BAR IS HERE___________________________________________ -->
-    <ul class="nav nav-pills">
+  <!--   <ul class="nav nav-pills">
       <li role="presentation" class="active">
         <a href="#">Brand</a>
       </li>
@@ -22,7 +22,7 @@
         </ul>
       </li>
   ...
-    </ul> 
+    </ul>  -->
     <!-- Button for adding class -->
   <button class="add-category-button">ADD CATEGORY</button>
 
@@ -30,29 +30,29 @@
 <!-- TEMPLATES BEGIN HERE_____________________________________________________________ -->
 <!-- Here is the form for entering a new category -->
 <div id="templates">
-<form class="new-category">
-  <h4>Enter a category</h4>
-  <input class="category-name" type="text" placeholder="Category name...">
-  <input type="submit">
-</form>
+  <form class="new-category">
+    <h4 class="enter-a-catagory" >Enter a category</h4>
+    <input class="category-name" type="text" placeholder="Category name...">
+    <input type="submit">
+  </form>
 
 <!-- here is my template for Items -->
   <div id="item-tpl" class="item-template">
     <h4 class="item-title">Item Title Goes Here</h4>
     <p class="item-cost">Cost goes here</p>
     <button class="remove-btn" data-name="name">X</button>
-</div>
+  </div>
     
 <!--Here is the template for entering items in to a category  -->
-<div id="category-tpl">
-        <h2 class="category-title">Title goes here</h2>
-        <form class="new-item-form">
-            <input class="new-item-title" placeholder="Item Title...">
-            <input class="new-item-cost" placeholder="Item Cost...">
-            <input type="submit">
-        </form>
-        <div class="item-container">This will have all the items</div>
-    </div>
+  <div id="category-with-items-tpl">
+          <form class="new-item-form">
+          <h2 class="category-title">Title goes here</h2>
+              <input class="new-item-title" placeholder="Item Title...">
+              <input class="new-item-cost" placeholder="Item Cost...">
+              <input type="submit">
+          </form>
+          <div class="item-container">This will have all the items</div>
+  </div>
 </div>    
 
 

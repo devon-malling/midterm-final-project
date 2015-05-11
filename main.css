@@ -2,10 +2,11 @@
 	display: none;
 }
 body {
-	width: 320px;
+	width: 420px;
 	height: 800px;
 	border: 1px dotted black;
 	padding: 10px;
+	font-family: sans-serif;
 }
 /*NAV BAR--------------------------------*/
 /*.nav-bar {
@@ -26,10 +27,19 @@ body {
 	margin-top: 20px;
 	width: 90px;
 }
-/*ENTER A CATEGORY INPUT*/
-.category-tpl {
 
+/*ENTER A CATEGORY INPUT*/
+.new-category {
+	float: left;
+	clear: both;
 }
+
+/*Enter items form*/
+.new-item-form {
+	float: left;
+	
+}
+
 /*ENTER ITEM AND COST INPUT*/
 .new-item-title {
 	width: 100px;
@@ -39,6 +49,7 @@ body {
 width: 100px;
 
 }
+
 /*USER DATA DISPLAYED*/
 #item-tpl {
 	border: 1px solid #1919A3;
@@ -63,4 +74,4 @@ width: 100px;
 }
 
 
-}
+/*}*/
