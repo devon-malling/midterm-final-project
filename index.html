@@ -25,6 +25,7 @@
     </ul>  -->
     <!-- Button for adding class -->
   <button class="add-category-button">ADD CATEGORY</button>
+  <button type="button" class="btn btn-default" class="add-category-button">Add Category</button>
 
 
 <!-- TEMPLATES BEGIN HERE_____________________________________________________________ -->
@@ -37,10 +38,12 @@
   </form>
 
 <!-- here is my template for Items -->
-  <div id="item-tpl" class="item-template">
+  <div id="item-tpl">
+    <div class="item-template">
     <h4 class="item-title">Item Title Goes Here</h4>
     <p class="item-cost">Cost goes here</p>
-    <button class="remove-btn" data-name="name">X</button>
+    <button class="remove-btn" data-name="name">Delete</button>
+    </div>
   </div>
     
 <!--Here is the template for entering items in to a category  -->

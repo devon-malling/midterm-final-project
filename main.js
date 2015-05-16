@@ -124,7 +124,7 @@ $('.add-category-button').on('click', function (e) {
 // visual hard coded
 var turtleCareSupplies = new Category('Turtle Care Supplies');
 $('body').append(turtleCareSupplies.render());
-var turtleWash = new Item('Turtle Wash', 12.98);
+var turtleWash = new Item('Turtle Wash', '$12.98');
 $('body').append(turtleWash.render());
 // on document ready closing tags
 });

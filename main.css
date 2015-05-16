@@ -20,12 +20,15 @@ body {
 
 /*Attempting to apply meida queries*/
 
-/*@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-*/
+@media only screen and (min-width : 320px) {
+
 /*ADD CATEGORY BUTTON*/
 .add-category-button {
 	margin-top: 20px;
 	width: 90px;
+	/*height: 40px;*/
+	border-radius: 10px;
+	/*background-color: white;*/
 }
 
 /*ENTER A CATEGORY INPUT*/
@@ -51,27 +54,32 @@ width: 100px;
 }
 
 /*USER DATA DISPLAYED*/
-#item-tpl {
-	border: 1px solid #1919A3;
+
+.item-template {
+	/*border: 1px solid #1919A3;*/
+	width: 300px;
 	margin-top: 20px;
+	float: left;
 }
 .item-title {
 	float: left;
 	margin-top: 0;
-	margin-right: 100px;
+	width: 150px;
 }
 .item-cost {
 	float: left;
-	margin-right: 5px;
+	margin: 0px;
+	width: 50px;
+	margin-right: 25px;
+
 } 
 .remove-btn {
-	width: 20px;
+	width: 45px;
 	height: 20px;
-	border-radius: 10px;
-	background-color: #b2b2b2;
-	color: #333333;
-	font-weight: bolder;
+	border-radius: 5px;
+	background-color: white;
+	font-size: 10px
+	}
+
+
 }
-
-
-/*}*/
